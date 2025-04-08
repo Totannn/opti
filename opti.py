@@ -2,9 +2,7 @@ import streamlit as st
 import pandas as pd
 import random
 from datetime import datetime
-import openai
-
-openai_client = openai.OpenAI(api_key="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")  # 👈 Put your actual API key here
+from openai import OpenAI
 
 # ====== SESSION STATE INITIALIZATION ======
 if "chat_history" not in st.session_state:
